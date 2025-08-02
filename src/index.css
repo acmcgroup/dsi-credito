@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.5rem;
+  
+  /* Global Crédito Brand Colors - Blue & Gold */
+  --background: 0 0% 98%;
+  --foreground: 220 15% 20%;
+  
+  --card: 0 0% 100%;
+  --card-foreground: 220 15% 20%;
+  
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 15% 20%;
+  
+  --primary: 220 85% 45%;
+  --primary-foreground: 0 0% 100%;
+  --primary-hover: 220 85% 40%;
+  --primary-glow: 220 75% 65%;
+  
+  --secondary: 45 80% 55%;
+  --secondary-foreground: 220 25% 25%;
+  
+  --muted: 220 15% 95%;
+  --muted-foreground: 220 15% 50%;
+  
+  --accent: 45 85% 95%;
+  --accent-foreground: 220 85% 35%;
+  
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+  
+  --border: 220 15% 90%;
+  --input: 220 15% 90%;
+  --ring: 220 85% 45%;
+  
+  /* Global Crédito Brand gradients - Blue & Gold */
+  --gradient-primary: linear-gradient(135deg, hsl(220 85% 45%), hsl(45 85% 60%));
+  --gradient-hero: linear-gradient(135deg, hsl(220 85% 45%) 0%, hsl(220 80% 50%) 30%, hsl(45 85% 60%) 100%);
+  --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(220 20% 98%) 100%);
+  --gradient-accent: linear-gradient(120deg, hsl(45 85% 95%) 0%, hsl(220 20% 98%) 100%);
+  
+  /* Shadows */
+  --shadow-soft: 0 4px 20px -2px hsl(220 85% 45% / 0.1);
+  --shadow-medium: 0 8px 30px -4px hsl(220 85% 45% / 0.15);
+  --shadow-strong: 0 16px 40px -8px hsl(220 85% 45% / 0.2);
+  --shadow-glow: 0 0 40px hsl(220 75% 65% / 0.3);
+  
+  /* Transitions */
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.dark {
+  --background: 220 15% 8%;
+  --foreground: 0 0% 98%;
+  
+  --card: 220 15% 10%;
+  --card-foreground: 0 0% 98%;
+  
+  --popover: 220 15% 10%;
+  --popover-foreground: 0 0% 98%;
+  
+  --primary: 220 75% 65%;
+  --primary-foreground: 220 15% 10%;
+  
+  --secondary: 45 70% 50%;
+  --secondary-foreground: 0 0% 98%;
+  
+  --muted: 220 15% 15%;
+  --muted-foreground: 220 15% 65%;
+  
+  --accent: 220 15% 15%;
+  --accent-foreground: 0 0% 98%;
+  
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  
+  --border: 220 15% 15%;
+  --input: 220 15% 15%;
+  --ring: 220 75% 65%;
+}
+
+@layer utilities {
+  /* Background gradients */
+  .bg-gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .bg-gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  .bg-gradient-accent {
+    background: var(--gradient-accent);
+  }
+  
+  /* Shadows */
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+  
+  .shadow-strong {
+    box-shadow: var(--shadow-strong);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  /* Transitions */
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
