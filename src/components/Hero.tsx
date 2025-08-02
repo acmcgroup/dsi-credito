@@ -19,7 +19,7 @@ const Hero = () => {
           quality={90}
         />
         {/* Blue transparent overlay */}
-        <div className="absolute inset-0 bg-blue-600/70"></div>
+        <div className="absolute inset-0 bg-blue-600/40"></div>
       </div>
 
       {/* Content */}
