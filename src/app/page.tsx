@@ -17,7 +17,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <AdvantagesCarousel />
+        {/* <AdvantagesCarousel />
         <HousingCredit />
         <Process />
         <Services />
@@ -25,7 +25,7 @@ export default function Home() {
         <TrustPartners />
         <Testimonials />
         <FAQ />
-        <Contact />
+        <Contact /> */}
       </main>
       <Footer />
     </div>
