@@ -26,7 +26,7 @@ const Hero = () => {
           src={heroImage} 
           alt="Porto Financial District" 
           fill
-          className="object-cover"
+          className="object-cover object-[-200px_0px] sm:object-[top]"
           priority
           quality={90}
         />
@@ -38,7 +38,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center text-white pt-20 pb-8">
         <div className="max-w-4xl  mx-auto mt-30">
           {/* Main headline */}
-          <h1 className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 sm:mb-8 leading-tight tracking-tight transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <h1 className={`text-5xl md:text-5xl lg:text-6xl font-black mb-6 sm:mb-8 leading-tight tracking-tight transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             Global
             <span className="text-white">
               {" "}Crédito
@@ -46,7 +46,7 @@ const Hero = () => {
           </h1>
 
           {/* Subheadline */}
-          <p className={`text-base sm:text-md md:text-lg mb-8 sm:mb-10 text-white/90
+          <p className={`text-sm sm:text-md md:text-lg mb-8 sm:mb-10 text-white/90
             max-w-2xl mx-auto leading-relaxed font-light px-4 sm:px-0 transition-all 
             duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: isVisible ? '200ms' : '0ms' }}>
             Acesso rápido e seguro às soluções de crédito, com condições exclusivas e apoio personalizado.
@@ -72,7 +72,7 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className={`flex flex-row sm:flex-row gap-3 sm:gap-4 justify-center items-center
              mb-12 sm:mb-16 px-4 sm:px-0 transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: isVisible ? '600ms' : '0ms' }}>
-            <Button variant="hero" size="lg" className="group w-full sm:w-auto bg-blue-600/80 
+            <Button variant="hero" size="lg" className="group sm:w-2/3 md:w-auto md:px-4 sm:px-0 bg-blue-600/80 
             hover:bg-blue-600/100 transition-all duration-300 font-bold text-white">
               Veja quanto pode poupar
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -101,8 +101,8 @@ const Hero = () => {
             style={{ transitionDelay: isVisible ? '1000ms' : '0ms' }}
             onClick={() => window.open('https://de.cdn-website.com/a1c59971a6334032b852ea665bbca5dc/files/uploaded/InfoLegal.pdf', '_blank')}
           >
-            <div className="flex items-start justify-between">
-              <p className="text-xs text-white/95 flex-1 leading-relaxed">
+            <div className="flex items-start justify-between px-0 sm:px-0">
+              <p className="text-[10px] md:text-[10px] text-white flex-1 leading-relaxed">
                 Pedro Duarte Baptista, Unipessoal Lda. Intermediário de Crédito Vinculado registado junto do Banco de Portugal sob o nº 0003923. 
                 A &ldquo;DS INTERMEDIÁRIOS DE CRÉDITO&rdquo; é uma marca titulada pela Decisões e Soluções Intermediários de Crédito, Lda.
               </p>
