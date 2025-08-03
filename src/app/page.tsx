@@ -17,15 +17,15 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        {/* <AdvantagesCarousel />
-        <HousingCredit />
-        <Process />
-        <Services />
-        <Benefits />
-        <TrustPartners />
-        <Testimonials />
-        <FAQ />
-        <Contact /> */}
+        {/* <AdvantagesCarousel /> */}
+        {/* <HousingCredit /> */}
+        {/* <Process /> */}
+        {/* <Services /> */}
+        {/* <Benefits /> */}
+        {/* <TrustPartners /> */}
+        {/* <Testimonials /> */}
+        {/* <FAQ /> */}
+        <Contact />
       </main>
       <Footer />
     </div>

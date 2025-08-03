@@ -58,8 +58,8 @@ const Header = () => {
               <div className="w-8 h-8 sm:w-10 sm:h-10 bg-white rounded-lg flex items-center justify-center shadow-md">
                 <span className="text-primary font-bold text-sm sm:text-lg">GC</span>
               </div>
-              <div className="block sm:hidden">
-                <h1 className="text-sm font-black text-white tracking-tight">GLOBAL CRÉDITO</h1>
+              <div className="block ">
+                <h1 className="text-sm font-black text-white tracking-tight">Global Crédito</h1>
               </div>
             </Link>
           </div>
@@ -67,10 +67,10 @@ const Header = () => {
           {/* Desktop navigation */}
           <nav className="absolute left-1/2 transform -translate-x-1/2 hidden lg:flex items-center space-x-6">
             <a href="#servicos" className="text-white/90 hover:text-white transition-colors font-medium text-sm whitespace-nowrap">
-              Os nossos serviços
+              Serviços
             </a>
             <a href="#sobre" className="text-white/90 hover:text-white transition-colors font-medium text-sm whitespace-nowrap">
-              Sobre Global Crédito
+              Sobre
             </a>
             <Link href="/blog" className="text-white/90 hover:text-white transition-colors font-medium text-sm whitespace-nowrap">
               Blog
@@ -85,12 +85,6 @@ const Header = () => {
 
           {/* Right side buttons - responsive */}
           <div className="flex items-center space-x-2 sm:space-x-3">
-            <Button variant="outline" size="sm" className="hidden md:flex bg-white/10 border-white/30 text-white hover:bg-white hover:text-primary backdrop-blur-sm text-xs sm:text-sm">
-              Simular Crédito
-            </Button>
-            <Button variant="hero" size="sm" className="shadow-md text-xs sm:text-sm px-3 sm:px-4">
-              Contactar
-            </Button>
           </div>
         </div>
       </div>
