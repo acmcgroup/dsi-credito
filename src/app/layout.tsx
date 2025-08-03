@@ -1,5 +1,14 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
+
+// Optimized font loading for consistent rendering across devices
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
 
 // 🔥 SEO HARDCORE METADATA
 export const metadata: Metadata = {
@@ -225,7 +234,7 @@ export default function RootLayout({
         <meta name="rating" content="general" />
       </head>
       <body
-        className="antialiased font-sans"
+        className={`${inter.variable} antialiased font-sans`}
       >
         {children}
       </body>

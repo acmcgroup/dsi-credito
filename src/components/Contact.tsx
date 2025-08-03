@@ -121,11 +121,8 @@ const Contact = () => {
   return (
     <section
       id="contacto"
-      className="py-10 sm:py-12 lg:py-20 bg-gradient-to-br from-gray-50/50 to-slate-100/30 relative overflow-hidden"
+      className="py-10 sm:py-12 lg:py-20 bg-white relative overflow-hidden"
     >
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/3 to-blue-600/3"></div>
-      </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center sm:mb-12 ">
@@ -140,7 +137,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {/* Contact Info */}
           <div className="space-y-6">
-            <Card className="bg-blue-200/30 backdrop-blur-sm border-0 shadow-md">
+            <Card className="bg-white border border-gray-200 shadow-md">
               <CardContent className="p-6">
                 <h3 className="text-lg font-semibold text-center mb-6">Informações de Contacto</h3>
                 <div className="space-y-5 text-sm">
@@ -163,7 +160,7 @@ const Contact = () => {
                     },
                   ].map((item, idx) => (
                     <div key={idx} className="flex gap-4 items-start">
-                      <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-blue-300 shadow">
+                      <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-blue-600 shadow">
                         {item.icon}
                       </div>
                       <div>
@@ -180,7 +177,7 @@ const Contact = () => {
             </Card>
           </div>
 
-          <Card className="shadow-md rounded-xl backdrop-blur-sm bg-blue-400/50 !border-none">
+          <Card className="shadow-md rounded-xl bg-white border border-gray-200">
             <CardHeader className="px-6 pt-6 pb-2">
               <CardTitle className="text-lg text-center font-semibold tracking-tight">
                 Envie-nos uma Mensagem
