@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import ScrollToTop from "@/components/ScrollToTop";
 
 // Optimized font loading for consistent rendering across devices
 const inter = Inter({
@@ -236,6 +237,19 @@ export default function RootLayout({
       <body
         className={`${inter.variable} antialiased font-sans`}
       >
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Ensure page always starts from top after reload
+              if ('scrollRestoration' in history) {
+                history.scrollRestoration = 'manual';
+              }
+              // Force scroll to top only when page loads (not before reload)
+              window.scrollTo(0, 0);
+            `,
+          }}
+        />
+        <ScrollToTop />
         {children}
       </body>
     </html>

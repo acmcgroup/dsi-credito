@@ -134,13 +134,13 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:items-stretch">
           {/* Contact Info */}
-          <div className="space-y-6">
-            <Card className="bg-white border border-gray-200 shadow-md">
-              <CardContent className="p-6">
+          <div className="space-y-6 h-full">
+            <Card className="bg-blue-50 border border-blue-100 shadow-md h-full flex flex-col">
+              <CardContent className="p-6 flex-1 flex flex-col">
                 <h3 className="text-lg font-semibold text-center mb-6">Informações de Contacto</h3>
-                <div className="space-y-5 text-sm">
+                <div className="space-y-5 text-sm flex-1">
                   {[
                     {
                       icon: <Phone className="h-5 w-5 text-white" />,
@@ -177,7 +177,7 @@ const Contact = () => {
             </Card>
           </div>
 
-          <Card className="shadow-md rounded-xl bg-white border border-gray-200">
+          <Card className="shadow-md rounded-xl bg-blue-100 border border-blue-200 h-full flex flex-col">
             <CardHeader className="px-6 pt-6 pb-2">
               <CardTitle className="text-lg text-center font-semibold tracking-tight">
                 Envie-nos uma Mensagem
@@ -187,7 +187,7 @@ const Contact = () => {
               </CardDescription>
             </CardHeader>
 
-            <CardContent className="px-6 pb-6 space-y-4 text-sm">
+            <CardContent className="px-6 pb-6 space-y-4 text-sm flex-1">
               {/* Success Message */}
               {submitStatus === 'success' && (
                 <div className="p-4 bg-gradient-to-r from-green-50 to-emerald-50 border border-green-400 text-green-700 rounded-md text-center shadow-lg transform transition-all duration-300 ease-out opacity-100">

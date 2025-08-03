@@ -8,6 +8,16 @@ import { useState, useEffect } from "react";
 
 const Header = () => {
   const [scrollOpacity, setScrollOpacity] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // Trigger animations after component mounts
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,7 +64,7 @@ const Header = () => {
         <div className="relative flex items-center py-3 sm:py-4">
           {/* Logo - responsive positioning */}
           <div className="flex-1 flex justify-start">
-            <Link href="/" className="flex items-center space-x-2 sm:space-x-4">
+            <Link href="/" className={`flex items-center space-x-2 sm:space-x-4 transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
               <div className="w-8 h-8 sm:w-10 sm:h-10 bg-white rounded-lg flex items-center justify-center shadow-md">
                 <span className="text-primary font-bold text-sm sm:text-lg">GC</span>
               </div>
@@ -66,25 +76,25 @@ const Header = () => {
 
           {/* Desktop navigation */}
           <nav className="absolute left-1/2 transform -translate-x-1/2 hidden lg:flex items-center space-x-6">
-            <a href="#servicos" className="text-white/90 hover:text-white transition-colors font-medium text-sm whitespace-nowrap">
+            <a href="#servicos" className={`text-white/90 hover:text-white font-medium text-sm whitespace-nowrap transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`} style={{ transitionDelay: isVisible ? '200ms' : '0ms' }}>
               Serviços
             </a>
-            <a href="#sobre" className="text-white/90 hover:text-white transition-colors font-medium text-sm whitespace-nowrap">
+            <a href="#sobre" className={`text-white/90 hover:text-white font-medium text-sm whitespace-nowrap transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`} style={{ transitionDelay: isVisible ? '400ms' : '0ms' }}>
               Sobre
             </a>
-            <Link href="/blog" className="text-white/90 hover:text-white transition-colors font-medium text-sm whitespace-nowrap">
+            <Link href="/blog" className={`text-white/90 hover:text-white font-medium text-sm whitespace-nowrap transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`} style={{ transitionDelay: isVisible ? '600ms' : '0ms' }}>
               Blog
             </Link>
-            <Link href="/informacao-legal" className="text-white/90 hover:text-white transition-colors font-medium text-sm whitespace-nowrap">
+            <Link href="/informacao-legal" className={`text-white/90 hover:text-white font-medium text-sm whitespace-nowrap transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`} style={{ transitionDelay: isVisible ? '800ms' : '0ms' }}>
               Informação Legal
             </Link>
-            <a href="#contacto" className="text-white/90 hover:text-white transition-colors font-medium text-sm whitespace-nowrap">
+            <a href="#contacto" className={`text-white/90 hover:text-white font-medium text-sm whitespace-nowrap transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`} style={{ transitionDelay: isVisible ? '1000ms' : '0ms' }}>
               Contactos
             </a>
           </nav>
 
           {/* Right side buttons - responsive */}
-          <div className="flex items-center space-x-2 sm:space-x-3">
+          <div className={`flex items-center space-x-2 sm:space-x-3 transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`} style={{ transitionDelay: isVisible ? '1200ms' : '0ms' }}>
           </div>
         </div>
       </div>
