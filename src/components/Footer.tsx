@@ -14,22 +14,17 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-black text-white">
+         <footer className="bg-[rgb(6,38,68)] text-white">
       <div className="container mx-auto px-4 py-12">
         {/* Main footer content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company info */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-                <span className="text-black font-bold text-xl">GC</span>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold">GLOBAL</h3>
-                <h4 className="text-xl font-bold">CRÉDITO</h4>
-                <p className="text-xs opacity-80">SOLUÇÕES FINANCEIRAS</p>
-              </div>
-            </div>
+                         <div className="flex items-center">
+               <div className="w-32 h-32 flex items-center justify-center">
+                 <img src="/logo.webp" alt="Global Crédito Logo" className="w-full h-full object-contain" />
+               </div>
+             </div>
             <p className="text-sm opacity-90 leading-relaxed">
               Pedro Duarte Baptista, Unipessoal Lda - Empresa de Intermediação financeira 
               e crédito. O seu parceiro de confiança no Porto.
@@ -44,12 +39,12 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Serviços</h3>
             <ul className="space-y-2 text-sm opacity-90">
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Crédito Habitação</a></li>
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Crédito Automóvel</a></li>
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Crédito Empresarial</a></li>
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Crédito Pessoal</a></li>
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Consolidação</a></li>
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Renegociação</a></li>
+              <li><Link href="/credito-habitacao" className="hover:opacity-100 transition-opacity">Crédito Habitação</Link></li>
+              <li><Link href="/credito-automovel" className="hover:opacity-100 transition-opacity">Crédito Automóvel</Link></li>
+              <li><Link href="/credito-empresarial" className="hover:opacity-100 transition-opacity">Crédito Empresarial</Link></li>
+              <li><Link href="/credito-pessoal" className="hover:opacity-100 transition-opacity">Crédito Pessoal</Link></li>
+              <li><Link href="/consolidacao" className="hover:opacity-100 transition-opacity">Consolidação</Link></li>
+              <li><Link href="/renegociacao" className="hover:opacity-100 transition-opacity">Renegociação</Link></li>
             </ul>
           </div>
 

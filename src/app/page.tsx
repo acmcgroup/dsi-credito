@@ -20,7 +20,7 @@ export default function Home() {
         {/* <AdvantagesCarousel /> */}
         {/* <HousingCredit /> */}
         {/* <Process /> */}
-        {/* <Services /> */}
+        <Services />
         {/* <Benefits /> */}
         {/* <TrustPartners /> */}
         {/* <Testimonials /> */}

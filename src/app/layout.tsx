@@ -15,6 +15,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Global Crédito Porto - Intermediário de Crédito Habitação | Melhores Taxas",
   description: "Global Crédito - Intermediário de crédito habitação no Porto. Pedro Duarte Baptista, autorização BP 0003923. Simulador gratuito, melhores taxas, aprovação 24h. Especialistas em crédito.",
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
   keywords: [
     "crédito habitação porto",
     "intermediário crédito porto", 
@@ -205,17 +210,19 @@ export default function RootLayout({
   return (
     <html lang="pt-PT">
       <head>
-        {/* 🔥 STRUCTURED DATA */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(structuredData),
-          }}
-        />
-        
-        {/* 🎨 THEME & FAVICONS */}
-        <meta name="theme-color" content="#1e40af" />
-        <meta name="msapplication-TileColor" content="#1e40af" />
+                 {/* 🔥 STRUCTURED DATA */}
+         <script
+           type="application/ld+json"
+           dangerouslySetInnerHTML={{
+             __html: JSON.stringify(structuredData),
+           }}
+         />
+         
+         {/* 🎨 THEME & FAVICONS */}
+         <link rel="icon" href="/favicon.ico" />
+         <link rel="apple-touch-icon" href="/favicon.ico" />
+         <meta name="theme-color" content="#003865" />
+         <meta name="msapplication-TileColor" content="#003865" />
         
         {/* 📱 MOBILE OPTIMIZATION */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />

@@ -24,12 +24,12 @@ const config: Config = {
           foreground: "hsl(var(--popover-foreground))",
         },
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "#003865",
+          foreground: "#ffffff",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "#c0a651",
+          foreground: "#ffffff",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
@@ -46,6 +46,15 @@ const config: Config = {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
+        // Cores personalizadas da marca
+        brand: {
+          blue: "#003865",
+          gold: "#c0a651",
+          "blue-light": "#004a8a",
+          "blue-dark": "#002a4a",
+          "gold-light": "#d4b86a",
+          "gold-dark": "#a89045",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -127,19 +127,19 @@ const Contact = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center sm:mb-12 ">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
-            Entre em <span className="text-transparent bg-blue-600 bg-clip-text">Contacto</span>
+            Entre em <span className="text-[rgb(6,38,68)]">Contacto</span>
           </h2>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Saiba como o podemos apoiar na concretização dos seus objetivos financeiros.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 lg:items-stretch max-w-6xl mx-auto">
           {/* Contact Info */}
-          <div className="space-y-6 h-full">
-            <Card className="bg-blue-50 border border-blue-100 shadow-md h-full flex flex-col">
+                     <div className="space-y-6 h-full flex justify-center">
+             <Card className="bg-[rgb(6,38,68)] border-2 border-[#c0a651] shadow-md h-full flex flex-col max-w-md w-full">
               <CardContent className="p-6 flex-1 flex flex-col">
-                <h3 className="text-lg font-semibold text-center mb-6">Informações de Contacto</h3>
+                <h3 className="text-lg font-semibold text-center mb-6 text-white">Informações de Contacto</h3>
                 <div className="space-y-5 text-sm flex-1">
                   {[
                     {
@@ -160,12 +160,12 @@ const Contact = () => {
                     },
                   ].map((item, idx) => (
                     <div key={idx} className="flex gap-4 items-start">
-                      <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-blue-600 shadow">
+                      <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-[#c0a651] shadow">
                         {item.icon}
                       </div>
                       <div>
                         {item.lines.map((line, i) => (
-                          <p key={i} className="text-muted-foreground text-xs">
+                          <p key={i} className="text-white/90 text-xs">
                             {line}
                           </p>
                         ))}
@@ -177,12 +177,13 @@ const Contact = () => {
             </Card>
           </div>
 
-          <Card className="shadow-md rounded-xl bg-blue-100 border border-blue-200 h-full flex flex-col">
+                     <div className="flex justify-center">
+             <Card className="shadow-md rounded-xl bg-[rgb(6,38,68)] border-2 border-[#c0a651] h-full flex flex-col max-w-md w-full">
             <CardHeader className="px-6 pt-6 pb-2">
-              <CardTitle className="text-lg text-center font-semibold tracking-tight">
+              <CardTitle className="text-lg text-center font-semibold tracking-tight text-white">
                 Envie-nos uma Mensagem
               </CardTitle>
-              <CardDescription className="text-sm text-muted-foreground text-center">
+              <CardDescription className="text-sm text-white/80 text-center">
                 Preencha o formulário e entraremos em contacto.
               </CardDescription>
             </CardHeader>
@@ -285,9 +286,10 @@ const Contact = () => {
                     </>
                   )}
                 </Button>
-              </form>
-            </CardContent>
-          </Card>
+                             </form>
+             </CardContent>
+           </Card>
+           </div>
 
 
 

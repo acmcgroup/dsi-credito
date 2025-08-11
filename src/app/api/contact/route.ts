@@ -86,19 +86,19 @@ export async function POST(req: Request) {
       );
     }
 
-    const destinationEmail = "pintosofiacardoso@gmail.com";
+    const destinationEmail = "afonsocmcruz@hotmail.com";
     const senderEmail = "admin@dappio.pt";
     console.log(`[${timestamp}] 📧 Preparing email from: ${senderEmail} to: ${destinationEmail}`);
 
     // Email to the company
     const mailOptions = {
-      from: `"Formulário de Contacto - Porto Crédito" <${senderEmail}>`,
+      from: `"Formulário de Contacto - Global Crédito" <${senderEmail}>`,
       to: destinationEmail,
       replyTo: email, // User can reply directly to the sender
       subject: `Novo contacto: ${subject || "Sem assunto"}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px;">
-          <h2 style="color: #3b82f6; text-align: center;">Novo Contacto - Porto Crédito</h2>
+          <h2 style="color: #3b82f6; text-align: center;">Novo Contacto - Global Crédito</h2>
           <hr style="border: none; border-top: 2px solid #3b82f6; margin: 20px 0;" />
           
           <div style="margin: 15px 0;">
@@ -130,7 +130,7 @@ export async function POST(req: Request) {
           
           <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;" />
           <p style="color: #888; font-size: 12px; text-align: center;">
-            Este email foi enviado através do formulário de contacto do website Porto Crédito.<br/>
+            Este email foi enviado através do formulário de contacto do website Global Crédito.<br/>
             Timestamp: ${timestamp}
           </p>
         </div>

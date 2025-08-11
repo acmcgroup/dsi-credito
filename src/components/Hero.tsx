@@ -31,7 +31,9 @@ const Hero = () => {
           quality={90}
         />
         {/* Blue transparent overlay */}
-        <div className="absolute inset-0 bg-blue-600/40"></div>
+        <div className="absolute inset-0 bg-[#003865]/40"></div>
+                 {/* Blue to Gold gradient overlay */}
+         <div className="absolute inset-0 bg-gradient-to-br from-[#003865]/25 via-[#c0a651]/35 to-[#f4d03f]/50"></div>
       </div>
 
       {/* Content */}
@@ -72,8 +74,8 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className={`flex flex-row sm:flex-row gap-3 sm:gap-4 justify-center items-center
              mb-12 sm:mb-16 px-4 sm:px-0 transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: isVisible ? '600ms' : '0ms' }}>
-            <Button variant="hero" size="lg" className="group sm:w-2/3 md:w-auto md:px-4 sm:px-0 bg-blue-600/80 
-            hover:bg-blue-600/100 transition-all duration-300 font-bold text-white">
+            <Button variant="hero" size="lg" className="group sm:w-2/3 md:w-auto md:px-4 sm:px-0 bg-[rgb(6,38,68)]/100 
+            hover:bg-[#c0a651] hover:text-[rgb(6,38,68)] transition-all duration-300 font-bold">
               Veja quanto pode poupar
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>

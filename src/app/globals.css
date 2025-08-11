@@ -3,6 +3,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* Global Crédito Brand Colors - Blue & Gold */
+  --primary: 0 56% 40%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 45 80% 60%;
+  --secondary-foreground: 0 0% 100%;
 }
 
 @theme inline {
