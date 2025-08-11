@@ -281,19 +281,19 @@ export default function DicasAprovacaoCreditoPessoalPage() {
                     </h3>
                     <ul className="space-y-2 text-green-700">
                       <li className="flex items-start gap-3">
-                        <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="h-4 w-4 text-[#c0a651] mt-0.5 flex-shrink-0" />
                         <span>Preparar toda a documentação</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="h-4 w-4 text-[#c0a651] mt-0.5 flex-shrink-0" />
                         <span>Ser transparente sobre a situação financeira</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="h-4 w-4 text-[#c0a651] mt-0.5 flex-shrink-0" />
                         <span>Escolher valores e prazos realistas</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="h-4 w-4 text-[#c0a651] mt-0.5 flex-shrink-0" />
                         <span>Comparar propostas de vários bancos</span>
                       </li>
                     </ul>

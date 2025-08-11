@@ -18,12 +18,12 @@ export const metadata: Metadata = {
 
 const CreditoAutomovel = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-green-50">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-green-900 to-green-700 text-white py-20">
+      <section className="bg-[rgb(6,38,68)] text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
-            <Badge variant="secondary" className="mb-4 bg-green-100 text-green-800">
+            <Badge variant="secondary" className="mb-4 bg-[#c0a651] text-white">
               <Car className="w-4 h-4 mr-2" />
               Crédito Automóvel
             </Badge>
@@ -34,11 +34,11 @@ const CreditoAutomovel = () => {
               Crédito automóvel com as melhores condições do mercado, para carros novos e usados
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-green-900 hover:bg-gray-100">
+              <Button size="lg" className="bg-[#c0a651] text-white hover:bg-[#f4d03f] hover:text-[rgb(6,38,68)] transition-all duration-300">
                 <Calculator className="w-5 h-5 mr-2" />
                 Simular Agora
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-green-900">
+              <Button size="lg" variant="outline" className="border-[#c0a651] text-[#c0a651] hover:bg-[#c0a651] hover:text-white transition-all duration-300">
                 <FileText className="w-5 h-5 mr-2" />
                 Documentos Necessários
               </Button>
@@ -60,10 +60,10 @@ const CreditoAutomovel = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="text-center p-6 hover:shadow-lg transition-shadow">
+            <Card className="text-center p-6 hover:shadow-lg transition-shadow border-0 shadow-md">
               <CardHeader>
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <TrendingUp className="w-8 h-8 text-green-600" />
+                <div className="w-16 h-16 bg-[#c0a651]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <TrendingUp className="w-8 h-8 text-[#c0a651]" />
                 </div>
                 <CardTitle>Taxas Competitivas</CardTitle>
               </CardHeader>
@@ -74,10 +74,10 @@ const CreditoAutomovel = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center p-6 hover:shadow-lg transition-shadow">
+            <Card className="text-center p-6 hover:shadow-lg transition-shadow border-0 shadow-md">
               <CardHeader>
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Clock className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 bg-[#c0a651]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Clock className="w-8 h-8 text-[#c0a651]" />
                 </div>
                 <CardTitle>Aprovação Rápida</CardTitle>
               </CardHeader>
@@ -88,10 +88,10 @@ const CreditoAutomovel = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center p-6 hover:shadow-lg transition-shadow">
+            <Card className="text-center p-6 hover:shadow-lg transition-shadow border-0 shadow-md">
               <CardHeader>
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Shield className="w-8 h-8 text-purple-600" />
+                <div className="w-16 h-16 bg-[#c0a651]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-8 h-8 text-[#c0a651]" />
                 </div>
                 <CardTitle>Segurança Total</CardTitle>
               </CardHeader>
@@ -106,7 +106,7 @@ const CreditoAutomovel = () => {
       </section>
 
       {/* CTA Final */}
-      <section className="py-20 bg-green-900 text-white">
+      <section className="py-20 bg-[rgb(6,38,68)] text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Pronto para Conduzir o Carro dos Seus Sonhos?
@@ -115,11 +115,11 @@ const CreditoAutomovel = () => {
             Contacte-nos hoje mesmo para uma consulta gratuita e descubra como podemos ajudá-lo
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-green-900 hover:bg-gray-100">
+            <Button size="lg" className="bg-[#c0a651] text-white hover:bg-[#f4d03f] hover:text-[rgb(6,38,68)] transition-all duration-300">
               <Calculator className="w-5 h-5 mr-2" />
               Simular Crédito
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-green-900">
+            <Button size="lg" variant="outline" className="border-[#c0a651] text-[#c0a651] hover:bg-[#c0a651] hover:text-white transition-all duration-300">
               <FileText className="w-5 h-5 mr-2" />
               Solicitar Consulta
             </Button>

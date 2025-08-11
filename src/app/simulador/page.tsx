@@ -5,7 +5,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Separator } from "@/components/ui/separator";
 import { 
   Calculator, 
   Home, 
@@ -15,7 +14,6 @@ import {
   TrendingUp, 
   DollarSign,
   Calendar,
-  Percent,
   Target,
   ArrowRight,
   Info

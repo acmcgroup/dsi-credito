@@ -29,12 +29,12 @@ export const metadata: Metadata = {
 
 const CreditoPessoal = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-orange-50">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-orange-900 to-orange-700 text-white py-20">
+      <section className="bg-[rgb(6,38,68)] text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
-            <Badge variant="secondary" className="mb-4 bg-orange-100 text-orange-800">
+            <Badge variant="secondary" className="mb-4 bg-[#c0a651] text-white">
               <User className="w-4 h-4 mr-2" />
               Crédito Pessoal
             </Badge>
@@ -45,11 +45,11 @@ const CreditoPessoal = () => {
               Crédito pessoal com condições vantajosas para projetos, consolidação de dívidas e necessidades urgentes
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-orange-900 hover:bg-gray-100">
+              <Button size="lg" className="bg-[#c0a651] text-white hover:bg-[#f4d03f] hover:text-[rgb(6,38,68)] transition-all duration-300">
                 <Calculator className="w-5 h-5 mr-2" />
                 Simular Agora
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-orange-900">
+              <Button size="lg" variant="outline" className="border-[#c0a651] text-[#c0a651] hover:bg-[#c0a651] hover:text-white transition-all duration-300">
                 <FileText className="w-5 h-5 mr-2" />
                 Documentos Necessários
               </Button>
@@ -71,10 +71,10 @@ const CreditoPessoal = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="text-center p-6 hover:shadow-lg transition-shadow">
+            <Card className="text-center p-6 hover:shadow-lg transition-shadow border-0 shadow-md">
               <CardHeader>
-                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <TrendingUp className="w-8 h-8 text-orange-600" />
+                <div className="w-16 h-16 bg-[#c0a651]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <TrendingUp className="w-8 h-8 text-[#c0a651]" />
                 </div>
                 <CardTitle>Taxas Competitivas</CardTitle>
               </CardHeader>
@@ -85,10 +85,10 @@ const CreditoPessoal = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center p-6 hover:shadow-lg transition-shadow">
+            <Card className="text-center p-6 hover:shadow-lg transition-shadow border-0 shadow-md">
               <CardHeader>
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Clock className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 bg-[#c0a651]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Clock className="w-8 h-8 text-[#c0a651]" />
                 </div>
                 <CardTitle>Aprovação Rápida</CardTitle>
               </CardHeader>
@@ -101,8 +101,8 @@ const CreditoPessoal = () => {
 
             <Card className="text-center p-6 hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Shield className="w-8 h-8 text-green-600" />
+                <div className="w-16 h-16 bg-[#c0a651]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-8 h-8 text-[#c0a651]" />
                 </div>
                 <CardTitle>Segurança Total</CardTitle>
               </CardHeader>
@@ -132,8 +132,8 @@ const CreditoPessoal = () => {
             <Card className="p-8 hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
-                    <Target className="w-6 h-6 text-orange-600" />
+                  <div className="w-12 h-12 bg-[#c0a651]/20 rounded-lg flex items-center justify-center">
+                    <Target className="w-6 h-6 text-[#c0a651]" />
                   </div>
                   <div>
                     <CardTitle className="text-2xl">Projetos Pessoais</CardTitle>
@@ -143,15 +143,15 @@ const CreditoPessoal = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-[#c0a651]" />
                   <span>Viagens e férias</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-[#c0a651]" />
                   <span>Formação e educação</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-[#c0a651]" />
                   <span>Casamentos e eventos</span>
                 </div>
               </CardContent>
@@ -160,8 +160,8 @@ const CreditoPessoal = () => {
             <Card className="p-8 hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <CreditCard className="w-6 h-6 text-blue-600" />
+                  <div className="w-12 h-12 bg-[#c0a651]/20 rounded-lg flex items-center justify-center">
+                    <CreditCard className="w-6 h-6 text-[#c0a651]" />
                   </div>
                   <div>
                     <CardTitle className="text-2xl">Consolidação de Dívidas</CardTitle>
@@ -171,15 +171,15 @@ const CreditoPessoal = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-[#c0a651]" />
                   <span>Unificação de créditos</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-[#c0a651]" />
                   <span>Redução de juros</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-[#c0a651]" />
                   <span>Uma única prestação</span>
                 </div>
               </CardContent>
@@ -188,8 +188,8 @@ const CreditoPessoal = () => {
             <Card className="p-8 hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                    <Zap className="w-6 h-6 text-green-600" />
+                  <div className="w-12 h-12 bg-[#c0a651]/20 rounded-lg flex items-center justify-center">
+                    <Zap className="w-6 h-6 text-[#c0a651]" />
                   </div>
                   <div>
                     <CardTitle className="text-2xl">Emergências</CardTitle>
@@ -199,15 +199,15 @@ const CreditoPessoal = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-[#c0a651]" />
                   <span>Despesas médicas</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-[#c0a651]" />
                   <span>Reparações urgentes</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-[#c0a651]" />
                   <span>Aprovação em 24h</span>
                 </div>
               </CardContent>
@@ -216,8 +216,8 @@ const CreditoPessoal = () => {
             <Card className="p-8 hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                    <User className="w-6 h-6 text-purple-600" />
+                  <div className="w-12 h-12 bg-[#c0a651]/20 rounded-lg flex items-center justify-center">
+                    <User className="w-6 h-6 text-[#c0a651]" />
                   </div>
                   <div>
                     <CardTitle className="text-2xl">Reformas</CardTitle>
@@ -227,15 +227,15 @@ const CreditoPessoal = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-[#c0a651]" />
                   <span>Obras de melhoria</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-[#c0a651]" />
                   <span>Mobiliário e eletrodomésticos</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-[#c0a651]" />
                   <span>Prazos flexíveis</span>
                 </div>
               </CardContent>
@@ -258,7 +258,7 @@ const CreditoPessoal = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-20 h-20 bg-orange-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              <div className="w-20 h-20 bg-[#c0a651] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 €
               </div>
               <h3 className="text-xl font-semibold mb-2">Montantes</h3>
@@ -268,7 +268,7 @@ const CreditoPessoal = () => {
             </div>
 
             <div className="text-center">
-              <div className="w-20 h-20 bg-orange-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              <div className="w-20 h-20 bg-[#c0a651] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 %
               </div>
               <h3 className="text-xl font-semibold mb-2">Taxas</h3>
@@ -278,7 +278,7 @@ const CreditoPessoal = () => {
             </div>
 
             <div className="text-center">
-              <div className="w-20 h-20 bg-orange-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              <div className="w-20 h-20 bg-[#c0a651] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 📅
               </div>
               <h3 className="text-xl font-semibold mb-2">Prazos</h3>
@@ -288,7 +288,7 @@ const CreditoPessoal = () => {
             </div>
 
             <div className="text-center">
-              <div className="w-20 h-20 bg-orange-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              <div className="w-20 h-20 bg-[#c0a651] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 ⚡
               </div>
               <h3 className="text-xl font-semibold mb-2">Aprovação</h3>
@@ -301,7 +301,7 @@ const CreditoPessoal = () => {
       </section>
 
       {/* CTA Final */}
-      <section className="py-20 bg-orange-900 text-white">
+      <section className="py-20 bg-[rgb(6,38,68)] text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Pronto para Realizar os Seus Projetos Pessoais?
@@ -310,11 +310,11 @@ const CreditoPessoal = () => {
             Contacte-nos hoje mesmo para uma consulta gratuita e descubra como podemos ajudá-lo
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-orange-900 hover:bg-gray-100">
+            <Button size="lg" className="bg-[#c0a651] text-white hover:bg-[#f4d03f] hover:text-[rgb(6,38,68)] transition-all duration-300">
               <Calculator className="w-5 h-5 mr-2" />
               Simular Crédito
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-orange-900">
+            <Button size="lg" variant="outline" className="border-[#c0a651] text-[#c0a651] hover:bg-[#c0a651] hover:text-white transition-all duration-300">
               <FileText className="w-5 h-5 mr-2" />
               Solicitar Consulta
             </Button>

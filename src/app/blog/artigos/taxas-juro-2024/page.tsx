@@ -309,15 +309,15 @@ export default function TaxasJuro2024Page() {
                     </h3>
                     <ul className="space-y-2 text-green-700">
                       <li className="flex items-start gap-3">
-                        <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="h-4 w-4 text-[#c0a651] mt-0.5 flex-shrink-0" />
                         <span>Possibilidade de taxas mais baixas no futuro</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="h-4 w-4 text-[#c0a651] mt-0.5 flex-shrink-0" />
                         <span>Negociação de melhores condições</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="h-4 w-4 text-[#c0a651] mt-0.5 flex-shrink-0" />
                         <span>Reestruturação de créditos existentes</span>
                       </li>
                     </ul>
