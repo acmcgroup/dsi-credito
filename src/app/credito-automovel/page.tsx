@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Car, Calculator, Shield, Clock, CheckCircle, TrendingUp, FileText, Zap, Fuel, Settings } from 'lucide-react';
+import { Car, Calculator, Shield, Clock, TrendingUp, FileText } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Crédito Automóvel | Global Crédito - Soluções Financeiras no Porto',

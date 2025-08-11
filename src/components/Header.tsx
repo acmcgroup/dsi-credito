@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 // Icons for future use - removing unused imports for now
 // import { Phone, Mail, MapPin } from "lucide-react";

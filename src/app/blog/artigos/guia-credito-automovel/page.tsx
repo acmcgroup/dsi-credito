@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Calendar, Clock, User, ArrowLeft, Car, TrendingUp, Calculator, Shield, CheckCircle, FileText } from "lucide-react";
+import { Calendar, Clock, User, ArrowLeft, Car, TrendingUp, Calculator, Shield, CheckCircle } from "lucide-react";
 import Link from "next/link";
 
 export const metadata = {

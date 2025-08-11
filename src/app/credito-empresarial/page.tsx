@@ -10,7 +10,6 @@ import {
   CheckCircle, 
   TrendingUp,
   FileText,
-  Users,
   Target,
   BarChart3
 } from 'lucide-react';

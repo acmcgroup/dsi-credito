@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Shield, Award, Users, Clock, MapPin, Phone, Mail } from "lucide-react";
+import { Shield, Award, Users, Clock } from "lucide-react";
 
 export default function SobrePage() {
   return (

@@ -1,5 +1,5 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Shield, FileText, UserCheck, Building, Phone, Mail, MapPin, ExternalLink } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Shield, FileText, UserCheck, Building, Phone, Mail, ExternalLink } from "lucide-react";
 
 export default function InformacaoLegalPage() {
   return (

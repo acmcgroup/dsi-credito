@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar, Clock, User, ArrowRight, TrendingUp, Home, Car, Building, CreditCard } from "lucide-react";
+import Link from "next/link";
 
 export default function BlogPage() {
   const blogPosts = [
